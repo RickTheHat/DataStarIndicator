@@ -3,9 +3,10 @@
 
 This repository contains two implementations of an Indicator functionality using DataStar:
 
-1. *working* > An [ASP.NET Core Web App](https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-9.0) (Model-View-Controller)
+1. ****not*** working* > An [ASP.NET Core Web App](https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-9.0) (Model-View-Controller)
 2. ****not*** working* > An [ASP.NET Core Web App](https://learn.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-9.0&tabs=visual-studio) (Razor Pages)
-  *clicking the button does not work
+
+**Clicking the button does not work on either project currently...**
 
 ## Indicator Demo
 pic or video goes here

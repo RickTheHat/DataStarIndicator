@@ -1,13 +1,25 @@
-﻿<div
+﻿<style>
+    .indicator {
+        opacity: 0;
+        transition: opacity 300ms ease-out;
+    }
+
+    .indicator.loading {
+        opacity: 1;
+        transition: opacity 300ms ease-in;
+    }
+</style>
+<div
     class="indicator"
-    data-class-loading="{loading: $fetching}">
+    data-class="{loading: $fetching}">
     Loading Indicator
 </div>
 <button
     id="greetingBtn"
+    data-on-click="@@get('/greet')"
     data-indicator-fetching
-    data-on-click="@@get('/Home/Greet')"
     data-attr-disabled="$fetching">
     Click me for a greeting
 </button>
+@* <div data-show="$fetching">Loading...</div> *@
 <div id="greeting"></div>

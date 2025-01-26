@@ -3,30 +3,23 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <title>DataStar Indicator</title>
+
     @* Stylesheets
        Using Pico CSS for minimal, semantic-first styling *@
     <link rel="stylesheet" href="~/css/pico.classless.min.css" asp-append-version="true">
-
-    <style>
-        .indicator {
-            opacity: 0;
-            transition: opacity 300ms ease-out;
-        }
-
-        .indicator.loading {
-            opacity: 1;
-            transition: opacity 300ms ease-in;
-        }
-    </style>
 
     @* Resource Preloading
        Improves performance by preloading critical JavaScript *@
     <link rel="preload" href="~/js/datastar.v1.0.0.beta-2.min.js" as="script">
 </head>
 <body>
-<main class="container">
+<main class="container-fluid">
     @RenderBody()
 </main>
+@* JavaScript Dependencies
+       Module-based JavaScript loading for modern browsers *@
+<script type="module" src="~/js/datastar.v1.0.0.beta-2.min.js" asp-append-version="true"></script>
 </body>
 </html>
