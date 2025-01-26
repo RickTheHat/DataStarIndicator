@@ -1,0 +1,13 @@
+﻿<div
+    class="indicator"
+    data-class-loading="{loading: $fetching}">
+    Loading Indicator
+</div>
+<button
+    id="greetingBtn"
+    data-indicator-fetching
+    data-on-click="@@get('/Home/Greet')"
+    data-attr-disabled="$fetching">
+    Click me for a greeting
+</button>
+<div id="greeting"></div>
